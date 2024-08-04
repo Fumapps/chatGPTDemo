@@ -1,0 +1,44 @@
+ext.mpsVersion = "2021.3.5"
+ext.languageName = "vimotest"
+
+ext.mpsPlugins = [ ]
+ext.customMpsPlugins = [
+        "com.mbeddr.platform": "https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/2021.3.24707.42254e5/platform-2021.3.24707.42254e5.zip",
+        "org.iets3.opensource": "https://artifacts.itemis.cloud/repository/maven-mps/org/iets3/opensource/2021.3.7469.49be13c/opensource-2021.3.7469.49be13c.zip"
+]
+
+apply from: 'gradle/init-gradle-scripts.gradle'
+
+task prepareMps {
+    group 'mps'
+    dependsOn 'buildOsSpecificBundle'
+    doLast {
+        // since we have no plugin dependencies, create the folder manually
+        file("$buildDir/mps-bundle/dependencies").mkdirs()
+    }
+}
+
+task mpsBuild {
+    group 'mps'
+    dependsOn 'mpsAntGenerate', 'mpsAntBuild'
+}
+
+task mpsClean {
+    group 'mps'
+    dependsOn 'mpsAntClean', 'mpsAntCleanSources'
+}
+
+task mpsTest {
+    group 'mps'
+    dependsOn 'mpsAntCheck', 'parseTestReportAfterAntCheck'
+}
+
+task openProjectInMps {
+    group 'mps'
+    dependsOn 'mpsOpenProjectInMpsForCurrentOs'
+}
+
+task buildAndOpenProjectInMps {
+    group 'mps'
+    dependsOn mpsBuild, openProjectInMps
+}

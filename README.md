@@ -2,6 +2,11 @@
 
 This is a demonstrator of an integration of ChatGPT in MPS. The idea is that users specify their model in prose, and ChatGPT produces the source code. 
 
+## Fumapps Fork
+
+Fork with added gradle files to simplify setup.
+
+Run: `./gradlew prepareMps openProjectInMps` to open the project in MPS, which automates the setup process.
 
 ## What this does
 

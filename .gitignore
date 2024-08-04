@@ -26,3 +26,12 @@ pom.xml.releaseBackup
 release.properties
 
 API_KEY
+
+# -----------------------------------------------------------
+# build
+# -----------------------------------------------------------
+.gradle
+artifacts
+build
+tmp
+/lib/

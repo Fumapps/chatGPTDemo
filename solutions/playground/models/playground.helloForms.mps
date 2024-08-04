@@ -82,13 +82,13 @@
   </registry>
   <node concept="2foCiW" id="6W$F1JwhNeR">
     <node concept="2foboS" id="2Fbvgl_N$Eq" role="2foCjP">
-      <ref role="2foboZ" node="2FbvglAyImQ" resolve="SleeplessnessForm" />
+      <ref role="2foboZ" node="7Yy1vgU0ZfS" resolve="SleeplessnessForm" />
       <node concept="2fobp$" id="2Fbvgl_OG79" role="2fobqq">
-        <ref role="2fobq4" node="2FbvglAyImU" resolve="difficultyFallingAsleep" />
+        <ref role="2fobq4" node="7Yy1vgU0ZfU" resolve="difficultyFallingAsleep" />
         <node concept="2vmvVl" id="2Fbvgl_OG7a" role="2fobri" />
       </node>
       <node concept="2fobp$" id="2Fbvgl_OG7b" role="2fobqq">
-        <ref role="2fobq4" node="2FbvglAyImW" resolve="wakingUpDuringNight" />
+        <ref role="2fobq4" node="7Yy1vgU0ZfW" resolve="wakingUpDuringNight" />
         <node concept="2vmvVl" id="2Fbvgl_OG7c" role="2fobri" />
       </node>
       <node concept="2fobp$" id="2Fbvgl_OG7d" role="2fobqq">
@@ -96,7 +96,7 @@
         <node concept="2vmvVl" id="2Fbvgl_OG7e" role="2fobri" />
       </node>
       <node concept="2fobp$" id="2Fbvgl_OG7f" role="2fobqq">
-        <ref role="2fobq4" node="2FbvglAyImS" resolve="hoursOfSleep" />
+        <ref role="2fobq4" node="7Yy1vgU0ZfY" resolve="hoursOfSleep" />
         <node concept="2vmvVl" id="2Fbvgl_OG7g" role="2fobri" />
       </node>
       <node concept="2fobp$" id="2Fbvgl_OG7h" role="2fobqq">
@@ -112,7 +112,7 @@
         <node concept="2vmvVl" id="2Fbvgl_OG7m" role="2fobrx" />
       </node>
       <node concept="2fobrI" id="2Fbvgl_OG7n" role="2fobqq">
-        <ref role="2fobrz" node="2FbvglAyIn3" resolve="overallSleepQuality" />
+        <ref role="2fobrz" node="7Yy1vgU0Zg3" resolve="overallSleepQuality" />
         <node concept="2vmvVl" id="2Fbvgl_OG7o" role="2fobrx" />
       </node>
       <node concept="2fobrI" id="2Fbvgl_OG7p" role="2fobqq">
